@@ -1,0 +1,17 @@
+*.sln
+*.sdf
+*.opensdf
+Debug/
+CPUInfoWrapper/
+ComputerInfoWrapperLibrary/
+*.vcxproj
+*.vcxproj.*
+NvidiaAPIWrapper/Debug
+NvidiaAPIWrapperDLL/Debug
+SystemMonitor/obj
+SystemMonitor/bin
+*.csproj
+.vs/
+*.settings
+*.resx
+*.config

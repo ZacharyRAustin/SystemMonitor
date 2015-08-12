@@ -1,0 +1,30 @@
+﻿<Window x:Class="SystemMonitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SystemMonitor"
+        mc:Ignorable="d"
+        Title="SysMonitor" Height="70" Width="510" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}"
+        Topmost="True">
+    <Grid>
+
+        <Label x:Name="cpuLabel" Content="" ContentStringFormat="CPU Utilization: {0}%" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="ramLabel" Content="" ContentStringFormat="RAM Usage: {0}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="133,0,0,0">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="gpuLabel" Content="" ContentStringFormat="GPU Temp: {0}°C" HorizontalAlignment="Left" Margin="331,0,0,0" VerticalAlignment="Top">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Button x:Name="optionsButton" Content="Options" Margin="437,3,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+    </Grid>
+</Window>

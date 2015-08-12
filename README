@@ -1,0 +1,10 @@
+System Monitor:
+
+A simple system monitor for windows machines with nvidia graphics cards.
+
+Displays:
+CPU Load
+RAM Usage
+GPU Temp
+
+Makes use of the NVAPI from Nvidia.
